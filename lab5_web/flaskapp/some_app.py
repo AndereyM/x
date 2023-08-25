@@ -1,6 +1,7 @@
 from flask import request
 from flask import Response
 from flask import Flask, render_template
+from flask import render_template 
 app = Flask(__name__)
 
 app.config['RECAPTCHA_PUBLIC_KEY'] = '6Lcd08knAAAAAAAq0NyWa-ELFbTCw1ndk7zxKR3u'
