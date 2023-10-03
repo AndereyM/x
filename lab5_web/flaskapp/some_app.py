@@ -50,7 +50,6 @@ class NetForm(FlaskForm):
 # для устранения в имени символов типа / и т.д.
 from werkzeug.utils import secure_filename
 import os
-79
 # подключаем наш модуль и переименовываем
 # для исключения конфликта имен
 import net as neuronet
@@ -78,9 +77,6 @@ def net():
  # передаем форму в шаблон, так же передаем имя файла и результат работы нейронной
  # сети, если был нажат сабмит, либо передадим falsy значения
  return render_template('net.html',form=form,image_name=filename,neurodic=neurodic) 
-
-
-
 
 
 
@@ -122,9 +118,6 @@ def apinet():
  mimetype="application/json") 
  # возвращаем ответ
  return resp 
-
-
-
 
 
 #наша новая функция сайта
