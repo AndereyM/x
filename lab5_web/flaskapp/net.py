@@ -2,7 +2,6 @@ import random
 # библиотека keras для НС
 import keras
 # входной слой сети и модель сети
-81
 from keras.layers import Input 
 from keras.models import Model 
 # одна из предобученных сетей
@@ -41,7 +40,6 @@ def read_image_files(files_max_count,dir_name):
  for file_i in range(files_count): # читаем изображения в список
  image_box[file_i] = Image.open(dir_name+'/'+files[file_i]) # / ??
  return files_count, image_box
-82
 # возвращаем результаты работы нейронной сети
 def getresult(image_box): 
  files_count = len(image_box) 
