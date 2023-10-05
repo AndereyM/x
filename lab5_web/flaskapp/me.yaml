@@ -1,0 +1,7 @@
+- name: Pipenvlock
+ run: pipenv lock
+- name: Pipenvsync
+ run: | 
+ pipenv sync
+- name: Start tests
+ run: pipenv run python -m pytest some_app.py
