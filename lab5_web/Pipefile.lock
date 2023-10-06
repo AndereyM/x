@@ -1,5 +1,8 @@
-pipenv lock
-pipenv sync
-pipenv clean
-pipenv install имя_пакета
-pipenv install
+[packages]
+fastapi = "*"
+pydantic = "*"
+uvicorn = "*"
+pytest = "*"
+[dev-packages]
+[requires]
+python_version = "3.8"
