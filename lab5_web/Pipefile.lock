@@ -1,0 +1,5 @@
+pipenv lock
+pipenv sync
+pipenv clean
+pipenv install имя_пакета
+pipenv install
